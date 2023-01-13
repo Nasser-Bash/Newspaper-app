@@ -1,0 +1,10 @@
+@import "../global/variables";
+.comments{
+    .comments-body{
+        .user-img{
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+        }
+    }
+}

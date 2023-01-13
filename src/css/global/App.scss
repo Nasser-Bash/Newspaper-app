@@ -1,0 +1,97 @@
+//global 
+@import "./variables";
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+//layout compoents 
+@import "../layout/header";
+@import "../layout/mobile-header";
+@import "../layout/main-menu";
+@import "../layout/footer";
+@import "../layout/sidebar";
+//widget compoents 
+@import "../widget/newscard";
+@import "../widget/posts";
+@import "../widget/comments";
+@import "../widget/lastest-post";
+@import "../widget/categories";
+@import "../widget/slider";
+//pages compoents 
+@import "../pages/category-page";
+@import "../pages/post-page";
+*,body , html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} 
+body{
+    background-color:$bodycolor;
+    font-family: 'Raleway', sans-serif;
+
+}
+button{
+    background-color: $maincolor !important;
+    border: none  !important;
+    &:hover{
+        transition: all 0.3s ease-in;
+        background-color: $secondryColor !important;
+        border: none    ;
+    }
+}
+a{
+    color: rgb(39, 39, 39) !important;
+    text-decoration: none;
+    &:hover{
+        color: $secondryColor !important;
+    }
+}
+i{
+    cursor: pointer;
+    color: $maincolor !important;
+    &:hover{
+        color: $secondryColor !important;
+    }
+}
+.logo{
+    max-width: 250px;
+}
+.category-section{
+    color: $secondryColor;
+    font-weight: 600;
+    border: 1px solid #c5c5c5;
+}
+.App-loader{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-color: $maincolor;
+}
+.loading{
+    position: absolute;
+    top: 50%;
+    margin-left: 45%;
+    margin-right: 45%;
+    border: 5px solid $bodycolor;
+    border-radius: 50%;
+    border-top: 5px solid $secondryColor;
+    width: 50px;
+    height: 50px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+}
+.loader {
+    position: relative;
+    margin-left: 50%;
+    margin-right: 50%;
+    border: 5px solid $maincolor;
+    border-radius: 50%;
+    border-top: 5px solid $secondryColor;
+    width: 50px;
+    height: 50px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+  }
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }

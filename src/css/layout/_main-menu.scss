@@ -1,0 +1,12 @@
+@import "../global/variables";
+.main-menu{
+.nav{
+    .nav-link{
+        font-size: 1.1em;
+        &:hover{
+            transition: all 0.1s ease-out;
+            border-bottom: 2px solid $secondryColor;
+    }
+    }
+}
+}

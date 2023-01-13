@@ -1,0 +1,14 @@
+@import "../global/variables";
+.posts{
+    img{
+        width: 350px;
+        height: 300px;
+        object-fit: cover;
+    }
+    .post-info{
+        .post-category{
+            color: $secondryColor;
+        }
+        
+    }
+}

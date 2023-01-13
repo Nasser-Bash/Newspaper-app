@@ -1,0 +1,23 @@
+@import "../global/variables";
+.post-details{
+        .post-feature-img{
+            width: 100%;
+        }
+        .post-title{
+            font-size: 2.3em;
+            color: $maincolor ;
+        }
+        p{
+            font-size: 1em;
+        }
+       
+}
+
+.share{
+            a{
+                font-size: 15px;
+                &:hover{
+                    color:white !important;
+                }
+            }   
+}

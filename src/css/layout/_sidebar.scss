@@ -1,0 +1,23 @@
+@import "../global/variables";
+
+.sidebar{
+.widget-title{
+        border: 2px solid #c5c5c5;
+        color: $maincolor;
+        font-weight: bold;
+        border-left: 8px solid $secondryColor;
+}
+.most-popular{
+    
+        img{
+            width: 150px;
+            height: 100px;
+            object-fit: cover;
+            
+        }
+        .post-title{
+            font-size: 0.9em;
+        }
+}
+
+}

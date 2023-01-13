@@ -1,0 +1,50 @@
+@import "../global/variables";
+.page-title{
+    background-color: #ededed;
+}
+.section-title{
+    color: $maincolor;
+    font-size: 1.8em;
+    font-weight: 900;
+    text-transform: uppercase;
+    position: relative;
+   &::after{
+    content: "";
+    border-bottom: 1px solid #c5c5c5;
+    position: absolute;
+    width: 70%;
+    top: 50%;
+    right: 0;
+   }
+}
+@media screen and (max-width: 784px) {
+    .section-title{
+        border-bottom: 1px solid #c5c5c5;
+
+    }
+    .section-title {
+        &::after{
+            content: "";
+            border-bottom: none;
+           }
+    }
+  }
+  .pagination{
+    li{
+        a{
+            transition: all 0.3s ease-in;
+        color: $maincolor !important;
+        &:hover{
+            background-color: $maincolor !important;
+            color: $secondryColor !important;
+        }
+        
+    }
+}
+.activepage{
+    a{
+    background-color: $maincolor !important;
+            color: $secondryColor !important;
+}
+}
+  }

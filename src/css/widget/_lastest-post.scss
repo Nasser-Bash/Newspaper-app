@@ -1,0 +1,29 @@
+@import "../global/variables";
+.lastestpost{
+    .card{
+        img{
+            width: 350px;
+            height: 250px;
+            object-fit: cover;
+        }
+        .post-date{
+            color: $secondryColor !important;
+        }
+        .read-more  {
+            a{
+            color : $maincolor !important;
+        }
+        i{
+            color : $maincolor !important;
+            padding: 3px;
+        }
+        &:hover{
+            i{
+                padding: 7px;
+                transition: all 0.2s ease-in;
+            }
+        }
+    }
+
+    }
+}

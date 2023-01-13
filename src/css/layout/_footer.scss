@@ -1,0 +1,46 @@
+@import "../global/variables";
+.footer{
+    color: $thirdColor !important;
+    background-color: $maincolor;
+   i{
+    color: $secondryColor !important;
+    &:hover{
+        color: $thirdColor !important;
+    }
+   }
+   a{
+    color: $thirdColor !important;
+   
+   }
+   .footer2{
+    .Newsletter{
+        background-color: $maincolor;
+        .title{
+            color: $bodycolor ;
+            font-size: 1.4em;
+            font-weight: 500;
+        }
+        p{
+            color: $thirdColor;
+            font-size: 0.8em;
+        }
+        form{
+            input{
+                background-color: transparent;
+                border: none;
+                color: $secondryColor;
+            }
+            button{
+                background-color: $secondryColor !important;
+                color: $maincolor;
+                &:hover{
+                    background-color: $thirdColor !important;
+                }
+            }
+        }
+    }
+   }
+   .footer3{
+        font-size: 0.8em;
+   }
+}

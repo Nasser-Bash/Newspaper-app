@@ -1,0 +1,33 @@
+@import "../global/variables";
+.card,.banner-card-2{
+    background-color: transparent;
+    border: none;
+    .card-body{
+    .card-title{
+        color:$maincolor;
+        font-weight: 300;
+    }
+    .post-date{
+        color: $thirdColor !important;
+    }
+    .category{
+        color: $secondryColor !important;
+        font-weight: 500;
+    }
+    }
+}
+.news-card{
+
+    img{
+       
+        object-fit:cover;
+    }
+    .card-body{
+        position: absolute;
+        bottom: 0;
+    }
+}
+.swiper-slide-active{
+    width: 822px
+;
+}
